@@ -4,7 +4,7 @@ project(CMakeSFMLProject LANGUAGES CXX)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
-link_directories("C:/Users/losec/CLionProjects/SFML-2.6.2")
+link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../SFML-2.6.2")
 
 include(FetchContent)
 FetchContent_Declare(SFML
